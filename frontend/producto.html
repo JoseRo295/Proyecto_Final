@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del producto | MiTienda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="index.html" class="logo">Mi<span>Tienda</span></a>
+            <ul class="lista_navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li id="enlace_carrito" class="oculto"><a href="carrito.html">Carrito</a></li>
+                <li id="enlace_pedidos" class="oculto"><a href="pedidos.html">Mis pedidos</a></li>
+                <li id="enlace_admin" class="oculto"><a href="admin.html">Administrar</a></li>
+                <li id="enlace_login"><a href="login.html">Iniciar sesión</a></li>
+                <li id="enlace_registro"><a href="registro.html">Registrarse</a></li>
+            </ul>
+            <div id="sesion" class="sesion oculto">
+                <span id="usuario_nombre"></span>
+                <button id="boton_salir" class="boton boton_pequeno">Cerrar sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <p id="mensaje_producto" class="mensaje"></p>
+        <article id="detalle" class="detalle oculto">
+            <img id="imagen" alt="Imagen del producto">
+            <div class="info_detalle">
+                <p id="categoria" class="categoria_detalle"></p>
+                <h1 id="nombre"></h1>
+                <p id="descripcion"></p>
+                <p id="precio" class="precio_producto"></p>
+                <p id="stock"></p>
+                <div class="agregar">
+                    <input type="number" id="cantidad" value="1" min="1">
+                    <button id="boton_agregar" class="boton">Agregar al carrito</button>
+                </div>
+                <p id="mensaje" class="mensaje"></p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="pie">
+        <p>MiTienda - Proyecto Final UIDE</p>
+    </footer>
+
+    <script src="js/comun.js"></script>
+    <script src="js/producto.js"></script>
+</body>
+</html>

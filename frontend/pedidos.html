@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis pedidos | MiTienda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a href="index.html" class="logo">Mi<span>Tienda</span></a>
+            <ul class="lista_navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li id="enlace_carrito" class="oculto"><a href="carrito.html">Carrito</a></li>
+                <li id="enlace_pedidos" class="oculto"><a href="pedidos.html">Mis pedidos</a></li>
+                <li id="enlace_admin" class="oculto"><a href="admin.html">Administrar</a></li>
+                <li id="enlace_login"><a href="login.html">Iniciar sesión</a></li>
+                <li id="enlace_registro"><a href="registro.html">Registrarse</a></li>
+            </ul>
+            <div id="sesion" class="sesion oculto">
+                <span id="usuario_nombre"></span>
+                <button id="boton_salir" class="boton boton_pequeno">Cerrar sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section class="seccion">
+            <h1 class="titulo_seccion">Mi cuenta</h1>
+            <p><strong>Nombre:</strong> <span id="cuenta_nombre"></span></p>
+            <p><strong>Correo:</strong> <span id="cuenta_email"></span></p>
+            <p><strong>Rol:</strong> <span id="cuenta_rol"></span></p>
+        </section>
+
+        <section class="seccion">
+            <h2 class="titulo_seccion">Mis pedidos</h2>
+            <p id="mensaje" class="mensaje"></p>
+            <div id="lista_pedidos"></div>
+        </section>
+
+        <section id="seccion_detalle" class="seccion oculto">
+            <h2 id="titulo_detalle" class="titulo_seccion"></h2>
+            <div id="lista_detalle"></div>
+            <div class="resumen">
+                <span id="total_detalle"></span>
+                <span id="estado_detalle" class="estado"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>MiTienda - Proyecto Final UIDE</p>
+    </footer>
+
+    <script src="js/comun.js"></script>
+    <script src="js/pedidos.js"></script>
+</body>
+</html>
